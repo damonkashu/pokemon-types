@@ -19,15 +19,21 @@ let types = [
   'WATER'
 ];
 
-$(document).ready(function() {
-	console.log('ready');
+$(function () {
+  // Grab the template script
+  var theTemplateScript = $('#type-grid').html();
 
-	let typeGrid = Array.from(document.getElementsByClassName('thumb'));
+  // Compile the template
+  var theTemplate = Handlebars.compile(theTemplateScript);
 
-	typeGrid.forEach(function(element, index) {
-		let newNode = document.createElement('div');
-		newNode.textContent = types[index];
-		element.insertBefore(newNode, element.children[0]);
-	});
+  // Define our data object
+  var context = {
+    'pokemonTypes': types
+  };
 
+  // Pass our data to the template
+  var theCompiledHtml = theTemplate(context);
+
+  // Add the compiled html to the page
+  $('#type-row').append(theCompiledHtml);
 });
