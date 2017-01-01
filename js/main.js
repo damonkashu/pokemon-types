@@ -6,17 +6,26 @@ $(function () {
     return options.fn(this).toUpperCase();
   });
 
+  Handlebars.registerHelper('pokemonFromId', function(id) {
+    return pokemonData[id].identifier;
+  });
+
   // Compile the template
   var theTemplate = Handlebars.compile(theTemplateScript);
 
-  let types = [];
-  for (var key in typeNames) {
-    types.push(typeNames[key].identifier.toUpperCase());
+  for (var id in pokemonData) {
+    pokemonData[id].types.forEach(function(type) {
+      if (!typeNames[type]['pokemon']) {
+        typeNames[type]['pokemon'] = [];
+      }
+      typeNames[type].pokemon.push(id);
+    });
   }
 
   // Define our data object
   var context = {
-    'typeNames': typeNames
+    'typeNames': typeNames,
+    'pokemonData': pokemonData
   };
 
   // Pass our data to the template

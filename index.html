@@ -75,6 +75,11 @@
                         <a class="thumbnail" href="#">
                             <img class="img-responsive" src="http://placehold.it/300x300" alt="">
                         </a>
+                        <select name="pokemon">
+                            {{#each pokemon}}
+                            <option value="{{this}}">{{pokemonFromId this}}</option>
+                            {{/each}}
+                        </select>
                     </div>
                 {{/each}}
             </script>
@@ -102,6 +107,7 @@
 
     <script src="js/handlebars-latest.js"></script>
     <script src="data/type_names.js"></script>
+    <script src="data/pokemon.js"></script>
     <script src="js/main.js"></script>
 
 </body>
