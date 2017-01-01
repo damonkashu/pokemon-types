@@ -69,9 +69,9 @@
             </div>
 
             <script id="type-grid" type="x-handlebars-template">
-                {{#each pokemonTypes}}
+                {{#each typeNames}}
                     <div class="col-lg-2 thumb">
-                        <div>{{this}}</div>
+                        <div>{{#uppercase}}{{identifier}}{{/uppercase}}</div>
                         <a class="thumbnail" href="#">
                             <img class="img-responsive" src="http://placehold.it/300x300" alt="">
                         </a>

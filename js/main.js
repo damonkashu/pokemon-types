@@ -2,6 +2,10 @@ $(function () {
   // Grab the template script
   var theTemplateScript = $('#type-grid').html();
 
+  Handlebars.registerHelper('uppercase', function(options) {
+    return options.fn(this).toUpperCase();
+  });
+
   // Compile the template
   var theTemplate = Handlebars.compile(theTemplateScript);
 
@@ -12,7 +16,7 @@ $(function () {
 
   // Define our data object
   var context = {
-    'pokemonTypes': types
+    'typeNames': typeNames
   };
 
   // Pass our data to the template
