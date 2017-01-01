@@ -1,0 +1,92 @@
+typeNames = {
+   "1": {
+      "identifier": "normal",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "2": {
+      "identifier": "fighting",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "3": {
+      "identifier": "flying",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "4": {
+      "identifier": "poison",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "5": {
+      "identifier": "ground",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "6": {
+      "identifier": "rock",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "7": {
+      "identifier": "bug",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "8": {
+      "identifier": "ghost",
+      "generation_id": 1,
+      "damage_class_id": 2
+   },
+   "9": {
+      "identifier": "steel",
+      "generation_id": 2,
+      "damage_class_id": 2
+   },
+   "10": {
+      "identifier": "fire",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "11": {
+      "identifier": "water",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "12": {
+      "identifier": "grass",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "13": {
+      "identifier": "electric",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "14": {
+      "identifier": "psychic",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "15": {
+      "identifier": "ice",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "16": {
+      "identifier": "dragon",
+      "generation_id": 1,
+      "damage_class_id": 3
+   },
+   "17": {
+      "identifier": "dark",
+      "generation_id": 2,
+      "damage_class_id": 3
+   },
+   "18": {
+      "identifier": "fairy",
+      "generation_id": 6,
+      "damage_class_id": null
+   }
+}

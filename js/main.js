@@ -1,30 +1,14 @@
-let types = [
-  'BUG',
-  'DARK',
-  'DRAGON',
-  'GHOST',
-  'GRASS',
-  'GROUND',
-  'ICE',
-  'ELECTRIC',
-  'FAIRY',
-  'FIGHTING',
-  'FIRE',
-  'FLYING',
-  'NORMAL',
-  'POISON',
-  'PSYCHIC',
-  'ROCK',
-  'STEEL',
-  'WATER'
-];
-
 $(function () {
   // Grab the template script
   var theTemplateScript = $('#type-grid').html();
 
   // Compile the template
   var theTemplate = Handlebars.compile(theTemplateScript);
+
+  let types = [];
+  for (var key in typeNames) {
+    types.push(typeNames[key].identifier.toUpperCase());
+  }
 
   // Define our data object
   var context = {
