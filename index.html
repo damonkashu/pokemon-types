@@ -70,12 +70,12 @@
 
             <script id="type-grid" type="x-handlebars-template">
                 {{#each typeNames}}
-                    <div class="col-lg-2 thumb">
+                    <div class="col-lg-2 type-card">
                         <div>{{#uppercase}}{{identifier}}{{/uppercase}}</div>
                         <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/300x300" alt="">
+                            <img id="{{identifier}}-img" class="img-responsive" src="http://placehold.it/300x300" alt="">
                         </a>
-                        <select class="form-control" name="{{@index}}">
+                        <select class="form-control" data-type="{{identifier}}" onchange="pokemonSelectHandler(event);">
                             {{#each pokemon}}
                             <option value="{{this}}">{{pokemonFromId this}}</option>
                             {{/each}}
