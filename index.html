@@ -75,7 +75,7 @@
                         <a class="thumbnail" href="#">
                             <img class="img-responsive" src="http://placehold.it/300x300" alt="">
                         </a>
-                        <select name="pokemon">
+                        <select class="form-control" name="{{@index}}">
                             {{#each pokemon}}
                             <option value="{{this}}">{{pokemonFromId this}}</option>
                             {{/each}}
