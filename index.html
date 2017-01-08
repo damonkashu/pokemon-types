@@ -72,8 +72,8 @@
                 {{#each typeNames}}
                     <div class="col-lg-2 type-card">
                         <div>{{#uppercase}}{{identifier}}{{/uppercase}}</div>
-                        <a class="thumbnail" href="#">
-                            <img id="{{identifier}}-img" class="img-responsive" src="http://placehold.it/300x300" alt="">
+                        <a class="sprite-container thumbnail" href="#">
+                            <img id="{{identifier}}-img" class="poke-sprite img-responsive" src="http://placehold.it/300x300" alt="">
                         </a>
                         <select class="form-control" data-type="{{identifier}}" onchange="pokemonSelectHandler(event);">
                             {{#each pokemon}}

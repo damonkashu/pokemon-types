@@ -1,7 +1,7 @@
 function pokemonSelectHandler(event) {
   let imgNode = document.getElementById(event.target.dataset.type + '-img');
   let pokemonName = pokemonData[event.target.value].identifier;
-  imgNode.src = 'http://placehold.it/300x300?text=' + pokemonName;
+  imgNode.src = 'sprites/' + pokemonName + '.gif';
 }
 
 $(function () {
